@@ -1,0 +1,43 @@
+<html>
+<head>
+<link rel='stylesheet', href='/stylesheets/style.css'>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+</head>
+<body>
+
+
+
+
+
+
+
+
+<script type='text/javascript'>
+
+	var scriptTag = document.createElement('script');
+
+	scriptTag.src = 'https://api.flickr.com/services/rest/?method=flickr.interestingness.getList&name=value&api_key=0ebf34685688c326f0f62794245388e3&user_id=130750396@N05&format=json&jsoncallback=doIt';
+
+	document.body.appendChild(scriptTag);
+	doIt = function(data){
+		console.log(data);
+	}
+
+//https://farm{farm-id}.staticflickr.com/{server-id}/{id}_{secret}.jpg - - - - - - - - This is the format for the picture url api
+
+	// doIt = function(data) { 
+	// var theImage = data.photos.photo[0];
+	// var images = document.createElement('img');
+	// images.src = ('https://c2.staticflicker.com/' + theImage.server + '/' + theImage.id + '/' + theImage.secret + '.jpg');
+		//document.createElement('coolpic').appendChild(image);
+
+
+	// }
+
+	//}
+
+//var request = new HTTPrequest()
+//request.open('get', '/test.json');
+//request.send();
+</script>
+</body>
